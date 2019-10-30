@@ -17,7 +17,7 @@
 #include <pthread.h>
 
 #ifndef LIB_API
-#ifdef LIB_EXPORTS
+#ifdef item_recognition_EXPORTS
 #if defined(_MSC_VER)
 #define LIB_API __declspec(dllexport)
 #else

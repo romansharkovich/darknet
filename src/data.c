@@ -962,8 +962,8 @@ data load_data_detection(int n, char **paths, int m, int w, int h, int c, int bo
                     //char buff_src[1000];
                     //sprintf(buff_src, "src_%d_%d_%s_%d", random_index, i, basecfg((char*)filename), random_gen());
                     //show_image_mat(src, buff_src);
-                    show_image(tmp_ai, buff);
-                    wait_until_press_key_cv();
+                    //show_image(tmp_ai, buff);
+                    //wait_until_press_key_cv();
                 }
                 printf("\nYou use flag -show_imgs, so will be saved aug_...jpg images. Click on window and press ESC button \n");
                 free_image(tmp_ai);
@@ -1130,8 +1130,8 @@ data load_data_detection(int n, char **paths, int m, int w, int h, int c, int bo
 
                 save_image(sized, buff);
                 if (show_imgs == 1) {
-                    show_image(sized, buff);
-                    wait_until_press_key_cv();
+                    //show_image(sized, buff);
+                   // wait_until_press_key_cv();
                 }
                 printf("\nYou use flag -show_imgs, so will be saved aug_...jpg images. Press Enter: \n");
                 //getchar();

@@ -354,10 +354,10 @@ void test_coco(char *cfgfile, char *weightfile, char *filename, float thresh)
         show_image(im, "predictions");
         free_image(im);
         free_image(sized);
-
+        /*
         wait_until_press_key_cv();
         destroy_all_windows_cv();
-
+        */
         if (filename) break;
     }
 }

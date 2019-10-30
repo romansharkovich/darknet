@@ -1331,10 +1331,10 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
         float *X = sized.data;
 
         //time= what_time_is_it_now();
-        double time = get_time_point();
+        //double time = get_time_point();
         network_predict(net, X);
         //network_predict_image(&net, im); letterbox = 1;
-        printf("%s: Predicted in %lf milli-seconds.\n", input, ((double)get_time_point() - time) / 1000);
+        //printf("%s: Predicted in %lf milli-seconds.\n", input, ((double)get_time_point() - time) / 1000);
         //printf("%s: Predicted in %f seconds.\n", input, (what_time_is_it_now()-time));
 
         int nboxes = 0;
@@ -1387,11 +1387,11 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
         free_detections(dets, nboxes);
         free_image(im);
         free_image(sized);
-
+        
         if (!dont_show) {
-            wait_until_press_key_cv();
+        /*    wait_until_press_key_cv();
             destroy_all_windows_cv();
-        }
+        */}
 
         if (filename) break;
     }

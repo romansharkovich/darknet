@@ -319,8 +319,8 @@ void test_yolo(char *cfgfile, char *weightfile, char *filename, float thresh)
         free_image(im);
         free_image(sized);
 
-        wait_until_press_key_cv();
-        destroy_all_windows_cv();
+        //wait_until_press_key_cv();
+        //destroy_all_windows_cv();
 
         if (filename) break;
     }

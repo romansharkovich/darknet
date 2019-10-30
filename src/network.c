@@ -387,7 +387,7 @@ float train_network_waitkey(network net, data d, int wait_key)
         net.current_subdivision = i;
         float err = train_network_datum(net, X, y);
         sum += err;
-        if(wait_key) wait_key_cv(5);
+        //if(wait_key) wait_key_cv(5);
     }
     free(X);
     free(y);
